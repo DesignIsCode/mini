@@ -1,0 +1,14 @@
+<!--pages/mine/mine.wxml-->
+<swiper  class="section head" indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item>
+            <image src="{{item}}"  class="img"></image>
+        </swiper-item>
+    </block>
+</swiper>
+
+<view>
+    {{msg}}
+</view>
+  
