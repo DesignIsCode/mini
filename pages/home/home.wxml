@@ -1,0 +1,14 @@
+<!--pages/home/home.wxml-->
+<swiper  class="section head" indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item>
+            <image src="{{item}}"  class="img"></image>
+        </swiper-item>
+    </block>
+</swiper>
+
+<view>
+    <button type="primary" plain>健康打卡</button>
+    <!-- <button type="primary" plain open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button> -->
+</view>

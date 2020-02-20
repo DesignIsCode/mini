@@ -1,0 +1,21 @@
+/* pages/mine/userinfo.wxss */
+label{
+  vertical-align: middle;
+  width: 30%;
+
+}
+
+input {
+    vertical-align: middle;
+}
+
+.form_body{
+  height: 100rpx;
+  display: flex;
+}
+
+.page_head{
+  text-align: center;
+  height: 100rpx;
+  font-size: 50rpx;
+}

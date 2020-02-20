@@ -1,1 +1,34 @@
 /* pages/mine/mine.wxss */
+.user_info_background{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo_avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo_nickname {
+  color: #aaa;
+}
+
+.tui-table-view{
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.tui-col-3{
+ flex: 0 0 auto;
+  width: 33.33333333%;
+  text-align: center;
+  color: #797979;
+  padding: 40rpx 0;
+  font-size: 30rpx;
+}
