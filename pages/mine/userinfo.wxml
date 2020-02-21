@@ -3,7 +3,7 @@
   个人信息
 </view>
 <view class="form_wrap">
-  <form class="form_main">
+  <form class="form_main" bindsubmit="formSubmit">
    <view class="form_body">
     <label>姓名：</label>
     <input  name="username" placeholder="姓名"></input>
@@ -19,7 +19,10 @@
    <view class="form_body">
     <label>验证码：</label>
     <input name="verifycode" placeholder="验证码"></input>
-    <button>发送验证码</button>
+    <button type="primary" class="need_flex" bindtap="sendSms"><text>{{sms_text}}</text></button>
+   </view>
+   <view class="form_body">
+    <button class="submit_form_button" form-type="submit"><text>提交</text></button>
    </view>
   </form>
 </view>

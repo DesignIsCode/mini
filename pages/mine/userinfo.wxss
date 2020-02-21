@@ -1,12 +1,16 @@
 /* pages/mine/userinfo.wxss */
 label{
   vertical-align: middle;
-  width: 30%;
+  width: 25%;
 
 }
 
 input {
     vertical-align: middle;
+}
+
+input[name='verifycode']{
+  width: 300rpx;
 }
 
 .form_body{
@@ -18,4 +22,33 @@ input {
   text-align: center;
   height: 100rpx;
   font-size: 50rpx;
+}
+
+.need_flex{
+  width: 230rpx;
+  font-size: 30rpx;
+  vertical-align: middle;
+  line-height: 60rpx;
+  padding: 0px;
+  display: table;
+}
+
+.need_flex text{
+  vertical-align:middle;
+  display: table-cell;
+}
+
+.submit_form_button{
+  width: 300rpx;
+  height: 100rpx;
+  background: #99ccff;
+  vertical-align: middle;
+  line-height: 60rpx;
+  text-align: center;
+  padding: 0px;
+  display: table;
+}
+.submit_form_button text{
+  vertical-align: middle;
+  display: table-cell;
 }

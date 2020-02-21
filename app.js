@@ -13,12 +13,15 @@ App({
         if (res.code) {
           //发起网络请求
           wx.request({
-            url: 'http://127.0.0.1:8080/mini/index',
+            url: 'http://127.0.0.1:8080/mini/initUserInfo',
             data: {
               code: res.code
             },
             success(res){
+              console.log("login");
               console.log(res);
+              wx.setStorageSync("openid", res.data.openid);
+              wx.setStorageSync("session_key",res.data.session_key)
             }
           })
         } else {

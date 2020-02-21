@@ -1,5 +1,6 @@
 // pages/mine/mine.js
 var app = getApp();
+var WXBizDataCrypt = require('../../utils/RdWXBizDataCrypt.js');
 Page({
   
   /**
@@ -93,7 +94,11 @@ Page({
   },
 
   getUserInfo: function (e) {
+    console.log("getUserInfo");
     console.log(e);
+    //var pc = new WXBizDataCrypt()
+    wx.setStorageSync("unionid", e.detail.encryptedData);
+    wx.setStorageSync("iv",e.detail.iv);  
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,

@@ -1,4 +1,5 @@
 // pages/home/home.js
+var app = getApp();
 Page({
 
   /**
@@ -68,10 +69,13 @@ Page({
   onShareAppMessage: function () {
 
   },
-  getUserInfo: function(e){
-    console.log(e);
-    const {userInfo} = e.detail;
-    //将数据缓存
-    wx.setStorageSync("userInfo", userInfo);
-  }
+  // getUserInfo: function(e){
+  //   console.log("getUserInfo");
+  //   console.log(e);
+    
+    
+  //   //const {userInfo} = e.detail;
+  //   //将数据缓存
+  //   //wx.setStorageSync("userInfo", userInfo);
+  // }
 })

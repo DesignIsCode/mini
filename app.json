@@ -1,5 +1,6 @@
 {
   "pages": [
+    
     "pages/home/home",
     "pages/index/index",
     "pages/mine/mine",
@@ -26,6 +27,6 @@
       "selectedIconPath": "icons/icon_people_fill.png"
     }]
   },
-  "style": "v2",
+  
   "sitemapLocation": "sitemap.json"
 }
