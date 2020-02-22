@@ -70,6 +70,10 @@ Page({
   sendSms: function(e){
     var vsecond = 60;
     var that = this;
+
+    //这里发送短信
+    
+
     var appCount = setInterval(function(){
       vsecond -=1;
       that.setData({

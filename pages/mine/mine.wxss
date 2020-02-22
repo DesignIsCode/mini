@@ -32,3 +32,7 @@
   padding: 40rpx 0;
   font-size: 30rpx;
 }
+
+.iconfont{
+  font-size: 80rpx;
+}

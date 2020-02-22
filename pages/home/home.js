@@ -7,11 +7,12 @@ Page({
    */
   data: {
     msg: "hello,mina",
-    indicatorDots: false,//是否显示圆点
+    indicatorDots: true,//是否显示圆点
     autoplay: true, //是否自动播放
     interval: 10000, //自动切换时间间隔
     duration: 2000,//滑动动画时长
-    imgUrls: ['/images/img01.png'] //轮播的图片
+    imgUrls: ['/images/timg.jpg'], //轮播的图片,
+    statusBarHeight: app.globalData.statusBarHeight
   },
 
   /**

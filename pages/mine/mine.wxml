@@ -11,16 +11,16 @@
 <view class="user_oper_wrap">
   <view class="tui-table-view">
     <view class="tui-col-3" bindtap="user_info_handler">
-      <icon class="iconfont icon-shouye"></icon>
+      <icon class="iconfont iconwo"></icon>
       <view>个人信息</view>
     </view>
     <view class="tui-col-3">
-      <icon class="iconfont icon-xinfeng"></icon>
-      <view>DD</view>
+      <icon class="iconfont icon31xiaoxi"></icon>
+      <view>消息</view>
     </view>
     <view class="tui-col-3">
-      <icon class="iconfont icon-duihuaxinxi"></icon>
-      <view>Chat</view>
+      <icon class="iconfont icon31shezhi"></icon>
+      <view>设置</view>
     </view>
     <!-- <view class="tui-col-3">
       <icon class="iconfont icon-dibiao"></icon>

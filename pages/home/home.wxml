@@ -1,5 +1,9 @@
 <!--pages/home/home.wxml-->
-<swiper  class="section head" indicator-dots="{{indicatorDots}}"
+<view class="custom flex_center" style="padding-top:{{statusBarHeight}}px">
+  <text>LEXY</text>
+</view>
+<view class="empty_custom" style="padding-top:{{statusBarHeight}}px"></view>
+<swiper class="image_swiper" indicator-dots="{{indicatorDots}}"
       autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{imgUrls}}" wx:key="*this">
         <swiper-item>

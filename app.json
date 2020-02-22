@@ -12,8 +12,9 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Lexy",
     "navigationBarTextStyle": "black",
-    "enablePullDownRefresh": true
-  },
+    "enablePullDownRefresh": true,
+    "navigationStyle": "custom"
+  },  
   "tabBar": {
     "list": [{
       "pagePath": "pages/home/home",
