@@ -1,4 +1,5 @@
 <!--pages/mine/mine.wxml-->
+<navbar page-name="LEXY" title-color="#ff0000" title-size="40rpx"></navbar>
 <view class="user_info_wrap">
   <view class="user_info_background">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>

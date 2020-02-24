@@ -1,4 +1,8 @@
 /* pages/mine/mine.wxss */
+.user_info_wrap{
+  margin-top:40rpx;
+}
+
 .user_info_background{
   display: flex;
   flex-direction: column;

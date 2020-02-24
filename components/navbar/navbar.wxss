@@ -1,4 +1,5 @@
-/* pages/navbar/navbar.wxss */
+/* components/navbar/navbar.wxss */
+@import "/icons/iconfont/iconfont.wxss";
 .navbar {
     width: 100%;
     overflow: hidden;
@@ -56,7 +57,7 @@
   
   .navbar-action-group .navbar-action_item {
     border-right: 1px solid #f0f0f0;
-    padding: 3px 14px;
+    padding: 2px 14px;
   }
   
   .navbar-action-group .last {

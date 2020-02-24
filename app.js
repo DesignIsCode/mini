@@ -2,7 +2,6 @@
 App({
   
   onLaunch: function () {
-    console.log('abc');
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -34,7 +33,6 @@ App({
     // 获取用户信息
     wx.getSetting({
       success: res => {
-        console.log(res.authSetting['scope.userInfo']);
         if (res.authSetting['scope.userInfo']) {
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
           wx.getUserInfo({
@@ -52,13 +50,9 @@ App({
         }
       }
     })
-  },
-  onLoad: function(){
-    console.log('mm');
     let menuButtonObject = wx.getMenuButtonBoundingClientRect();
     wx.getSystemInfo({
       success: res => {
-        
         let statusBarHeight = res.statusBarHeight,
           navTop = menuButtonObject.top,//胶囊按钮与顶部的距离
           navHeight = statusBarHeight + menuButtonObject.height + (menuButtonObject.top - statusBarHeight) * 2;//导航高度

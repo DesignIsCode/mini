@@ -6,13 +6,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    msg: "hello,mina",
     indicatorDots: true,//是否显示圆点
     autoplay: true, //是否自动播放
     interval: 10000, //自动切换时间间隔
     duration: 2000,//滑动动画时长
-    imgUrls: ['/images/timg.jpg'], //轮播的图片,
-    statusBarHeight: app.globalData.statusBarHeight
+    imgUrls: ['/images/1.jpg','/images/2.jpg'], //轮播的图片,
   },
 
   /**
