@@ -17,3 +17,4 @@
     <button type="primary" plain>健康打卡</button>
     <!-- <button type="primary" plain open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button> -->
 </view>
+<icon name="qiehuanqizuo"></icon>
