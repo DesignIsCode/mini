@@ -18,11 +18,26 @@ App({
             data: {
               code: res.code
             },
-            success(res){
+            success(res) {
               console.log("login");
               console.log(res);
               wx.setStorageSync("openid", res.data.openid);
               wx.setStorageSync("session_key",res.data.session_key)
+              //判断是否是已注册过的用户
+              wx.request({
+                url: 'http://127.0.0.1:8080/mini/checkUserinfo',
+                data: {
+                  openid: wx.getStorageSync("openid")
+                },
+                success(res) {
+                  if(!res.flag){
+                    console.log("验证失败")
+                    wx.navigateTo({
+                      url: '/pages/mine/userinfo',
+                    })
+                  }
+                }
+              })
             }
           })
         } else {

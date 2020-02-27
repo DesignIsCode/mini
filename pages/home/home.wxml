@@ -13,8 +13,23 @@
     </block>
 </swiper>
 
-<view>
-    <button type="primary" plain>健康打卡</button>
-    <!-- <button type="primary" plain open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button> -->
+<view class="fun_wrap">
+  <view class="fun-table-view">
+    <view class="fun-col-4" bindtap="user_info_handler">
+      <icon name="work" size="50rpx"></icon>
+      <view>工作</view>
+    </view>
+    <view class="fun-col-4">
+      <icon name="liucheng" size="50rpx"></icon>
+      <view>流程</view>
+    </view>
+    <view class="fun-col-4">
+      <icon name="zhishi" size="50rpx"></icon>
+      <view>知识</view>
+    </view>
+    <view class="fun-col-4">
+      <icon name="fenxiangyouli" size="50rpx"></icon>
+      <view>健康打卡</view>
+    </view>
+  </view>
 </view>
-<icon name="qiehuanqizuo"></icon>

@@ -2,9 +2,9 @@
   "pages": [
     
     "pages/home/home",
-    
-    "pages/index/index",
     "pages/mine/mine",
+    "pages/index/index",
+    
     "pages/mine/userinfo",
     "pages/logs/logs"
   ],

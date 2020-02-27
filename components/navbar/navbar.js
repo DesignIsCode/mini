@@ -27,7 +27,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    bgColor: '#cccccc',
+    bgColor: "#cccccc",
     navTop: app.globalData.navTop + 2,
     navHeight: app.globalData.navHeight,
     windowHeight: app.globalData.windowHeight,
@@ -37,11 +37,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    //回退
-    navBack: function () {
-      wx.navigateBack({
-        delta: 1
-      })      
-    },
+    
   }
 })

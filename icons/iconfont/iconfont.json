@@ -6,6 +6,41 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1238476",
+      "name": "work",
+      "font_class": "work",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "3878664",
+      "name": "健康",
+      "font_class": "heart",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "6193798",
+      "name": "流程",
+      "font_class": "liucheng",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "6562523",
+      "name": "知识",
+      "font_class": "zhishi",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "12257029",
+      "name": "健康档案",
+      "font_class": "fenxiangyouli",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
       "icon_id": "5158",
       "name": "切换器左",
       "font_class": "qiehuanqizuo",

@@ -1,7 +1,7 @@
 <view
   class="custom-class iconfont icon{{ name }}"
   style="{{ color ? 'color: ' + color : '' }}; {{ size ? 'font-size: ' + size : '' }}"
-  bind:tap="onClick"
+  bind:tap="onClick{{name}}"
 >
   <view wx:if="{{ info !== null }}" class="icon__info">{{ info }}</view>
 </view>
