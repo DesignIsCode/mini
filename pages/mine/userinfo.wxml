@@ -1,5 +1,5 @@
 <!--pages/mine/userinfo.wxml-->
-<navbar page-name="LEXY" title-color="#ff0000" title-size="40rpx" show-back="true"></navbar>
+<navbar page-name="LEXY" title-color="#ff0000" title-size="40rpx" show-back="false"></navbar>
 <view class="page_head">
   个人信息
 </view>
