@@ -8,7 +8,6 @@ Page({
    */
   data: {
     userInfo: {},
-    hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
 
@@ -100,9 +99,9 @@ Page({
     wx.setStorageSync("unionid", e.detail.encryptedData);
     wx.setStorageSync("iv",e.detail.iv);  
     app.globalData.userInfo = e.detail.userInfo
+    app.globalData.hasUserInfo = true;
     this.setData({
       userInfo: e.detail.userInfo,
-      hasUserInfo: true
     })
   },
   user_info_handler: function(e){

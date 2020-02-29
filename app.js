@@ -4,37 +4,36 @@ App({
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+    logs.unshift(Date.now());
+    wx.setStorageSync('logs', logs);
 
     // 登录
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         if (res.code) {
-          //发起网络请求
           wx.request({
-            url: 'http://127.0.0.1:8080/mini/initUserInfo',
+            url: 'http://192.168.35.211:8080/mini/initUserInfo',
             data: {
               code: res.code
             },
             success(res) {
-              console.log("login");
-              console.log(res);
               wx.setStorageSync("openid", res.data.openid);
-              wx.setStorageSync("session_key",res.data.session_key)
+              wx.setStorageSync("session_key",res.data.session_key);
               //判断是否是已注册过的用户
               wx.request({
-                url: 'http://127.0.0.1:8080/mini/checkUserinfo',
+                url: 'http://dzfp.lexy.cn/wechatmini/mini/checkUser',
                 data: {
                   openid: wx.getStorageSync("openid")
                 },
                 success(res) {
-                  if(!res.flag){
-                    console.log("验证失败")
+                  if (!res.data.flag) {
+                    console.log(res);
                     wx.navigateTo({
                       url: '/pages/mine/userinfo',
                     })
+                  }else {
+                     //通过
                   }
                 }
               })
@@ -45,6 +44,7 @@ App({
         }
       }
     })
+    
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -82,6 +82,7 @@ App({
   },
   globalData: {
     userInfo: null,
+    hasUserInfo: false,
     statusBarHeight: wx.getSystemInfoSync()['statusBarHeight']
   }
 })

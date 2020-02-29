@@ -18,8 +18,8 @@ Component({
       value: "40rpx"
     },
     showBack: {
-      type: Boolean,
-      value: false
+      type: String,
+      value: "false"
     }
   },
 

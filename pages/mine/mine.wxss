@@ -17,7 +17,7 @@
 }
 
 .userinfo_login_button{
-  width: 180rpx;
+  width: 200rpx;
   margin: 0rpx 50rpx 0rpx 50rpx;
 }
 
