@@ -13,7 +13,7 @@ App({
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         if (res.code) {
           wx.request({
-            url: 'http://192.168.35.211:8080/mini/initUserInfo',
+            url: 'https://dzfp.lexy.cn/wechatmini/mini/initUserInfo',
             data: {
               code: res.code
             },
@@ -22,7 +22,7 @@ App({
               wx.setStorageSync("session_key",res.data.session_key);
               //判断是否是已注册过的用户
               wx.request({
-                url: 'http://dzfp.lexy.cn/wechatmini/mini/checkUser',
+                url: 'https://dzfp.lexy.cn/wechatmini/mini/checkUser',
                 data: {
                   openid: wx.getStorageSync("openid")
                 },
