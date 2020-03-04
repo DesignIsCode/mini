@@ -17,7 +17,23 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    //判断是否是已注册过的用户
+    // wx.request({
+    //   url: 'http://192.168.35.211:8080/mini/checkUser',
+    //   data: {
+    //     openid: wx.getStorageSync("openid")
+    //   },
+    //   success(res) {
+    //     if (!res.data.flag) {
+    //       console.log(res);
+    //       wx.navigateTo({
+    //         url: '/pages/mine/userinfo',
+    //       })
+    //     }else {
+    //        //通过
+    //     }
+    //   }
+    // })
   },
 
   /**
@@ -31,7 +47,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**

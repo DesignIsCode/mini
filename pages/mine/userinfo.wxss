@@ -1,35 +1,38 @@
 /* pages/mine/userinfo.wxss */
-label{
-  vertical-align: middle;
-  width: 25%;
+.form_body{
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+}
 
+label{
+  line-height: 80rpx;
+  width: 25%;
 }
 
 input {
-    vertical-align: middle;
+    height: 80rpx;
+    border-bottom: 1rpx solid #99ccff;
 }
 
 input[name='verifycode']{
-  width: 300rpx;
-}
-
-.form_body{
-  height: 100rpx;
-  display: flex;
+  width: 280rpx;
 }
 
 .page_head{
   text-align: center;
   height: 100rpx;
   font-size: 50rpx;
+  padding-top: 30rpx;
 }
 
 .need_flex{
-  width: 230rpx;
+  width: 190rpx;
   font-size: 30rpx;
-  vertical-align: middle;
-  line-height: 60rpx;
+  
+  line-height: 80rpx;
   padding: 0px;
+
   display: table;
 }
 
@@ -39,7 +42,7 @@ input[name='verifycode']{
 }
 
 .submit_form_button{
-  width: 300rpx;
+  width: 200rpx;
   height: 100rpx;
   background: #99ccff;
   vertical-align: middle;
@@ -48,7 +51,13 @@ input[name='verifycode']{
   padding: 0px;
   display: table;
 }
+
 .submit_form_button text{
   vertical-align: middle;
   display: table-cell;
+}
+
+.form_wrap{
+  width: 93%;
+  margin: 0 auto;
 }

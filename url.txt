@@ -1,0 +1,2 @@
+https://dzfp.lexy.cn/wechatmini/mini/initUserInfo
+http://test.lexy.cn:8080/mini/initUserInfo

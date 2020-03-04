@@ -8,42 +8,25 @@ App({
     wx.setStorageSync('logs', logs);
 
     // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-        if (res.code) {
-          wx.request({
-            url: 'https://dzfp.lexy.cn/wechatmini/mini/initUserInfo',
-            data: {
-              code: res.code
-            },
-            success(res) {
-              wx.setStorageSync("openid", res.data.openid);
-              wx.setStorageSync("session_key",res.data.session_key);
-              //判断是否是已注册过的用户
-              wx.request({
-                url: 'https://dzfp.lexy.cn/wechatmini/mini/checkUser',
-                data: {
-                  openid: wx.getStorageSync("openid")
-                },
-                success(res) {
-                  if (!res.data.flag) {
-                    console.log(res);
-                    wx.navigateTo({
-                      url: '/pages/mine/userinfo',
-                    })
-                  }else {
-                     //通过
-                  }
-                }
-              })
-            }
-          })
-        } else {
-          console.log('登录失败！' + res.errMsg)
-        }
-      }
-    })
+    // wx.login({
+    //   success: res => {
+    //     // 发送 res.code 到后台换取 openId, sessionKey, unionId
+    //     if (res.code) {
+    //       wx.request({
+    //         url: 'http://192.168.35.211:8080/mini/initUserInfo',
+    //         data: {
+    //           code: res.code
+    //         },
+    //         success(res) {
+    //           wx.setStorageSync("openid", res.data.openid);
+    //           wx.setStorageSync("session_key",res.data.session_key);
+    //         }
+    //       })
+    //     } else {
+    //       console.log('登录失败！' + res.errMsg)
+    //     }
+    //   }
+    // })
     
     // 获取用户信息
     wx.getSetting({
